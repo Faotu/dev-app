@@ -27,7 +27,7 @@ const activeRoute = [
 
 const Header: React.FC<HeaderProps> = ({ children, className }) => {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 p-5 flex  max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -57,26 +57,37 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                 </div>
               ))}
             </div>
-            <div className="flex items-start justify-right text-right px-4 gap-5">
-              <Link href="https://www.twitter.com/FaotuHappy/">
-                <FaSquareXTwitter
-                  size={26}
-                  className="hover:text-xl hover:text-teal-500"
-                />
-              </Link>
+            <div className="flex justify-around">
+              <div className="flex items-start justify-right text-right px-4 gap-5">
+                <Link href="https://www.twitter.com/FaotuHappy/">
+                  <div className="flex flex-row">
+                    <FaSquareXTwitter
+                      size={26}
+                      className="hover:text-xl hover:text-teal-500"
+                    />
+                    <h1>Twitter (X)</h1>
+                  </div>
+                </Link>
 
-              <Link href="https://www.linkedin.com/in/faotuhappy/">
-                <FaLinkedin
-                  size={26}
-                  className="hover:text-xl hover:text-teal-500"
-                />
-              </Link>
-              <Link href="https://github.com/Faotu">
-                <FaGithubSquare
-                  size={26}
-                  className="hover:text-xl hover:text-teal-500"
-                />
-              </Link>
+                <Link href="https://www.linkedin.com/in/faotuhappy/">
+                  <div className="flex flex-row">
+                    <FaLinkedin
+                      size={26}
+                      className="hover:text-xl hover:text-teal-500"
+                    />
+                    <h1>LinkedIn</h1>
+                  </div>
+                </Link>
+                <Link href="https://github.com/Faotu">
+                  <div className="flex flex-row">
+                    <FaGithubSquare
+                      size={26}
+                      className="hover:text-xl hover:text-teal-500"
+                    />{" "}
+                    <h1>GitHub</h1>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
