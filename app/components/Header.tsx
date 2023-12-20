@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           scale: 1,
         }}
         transition={{
-          duration: 2.5,
+          duration: 1.5,
         }}
       >
         <div className="flex flex-col px-4 py-6">
