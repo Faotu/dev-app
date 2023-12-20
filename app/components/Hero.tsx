@@ -75,7 +75,9 @@ const Hero = () => {
           </div>
           <div className="pt-4">
             <Button>
-              <h1>Download</h1>
+              <a href="HappyResume.pdf" download="/public/HappyResume.pdf">
+                Download
+              </a>
               <RxDownload />
             </Button>
           </div>
